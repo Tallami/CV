@@ -10,6 +10,16 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/229bd6718e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="typewriter.js"></script>
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
@@ -23,7 +33,7 @@
       <nav>
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
-          <h2>Tomas Allami</h2>
+          <h2 style="font-size: 32px">Tomas Allami</h2>
           <ul>
             <li><a href="#about">ABOUT</a></li>
             <li><a href="#work">WORK</a></li>
@@ -34,7 +44,16 @@
       </nav>
 
       <div class="text-box">
-        <h1>Hello World</h1>
+        <h1>
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='[ "Hello World.", "Im Tomas.", "I Love to Develop." ]'
+          >
+            <span class="wrap"></span
+          ></a>
+        </h1>
       </div>
     </section>
 
@@ -46,110 +65,129 @@
         <div class="profile__img"></div>
       </div>
 
-      <div class="row">
-        <div class="about-col">
-          <h3>Languages</h3>
-          <p>
-            Spanish | Native or bilingual proficiency <br />
-            English | Professional working proficiency <br />
-            Portuguese | Elementary proficiency
-          </p>
-        </div>
-        <div class="about-col">
-          <div class="my-skills__container">
-            <h3>My skills</h3>
-            <div>
-              <p>
-                HTML | CSS | JavaScript | Python | SQLite | Django | Rest
-                Framework | Git | Github | APIS | JSON Parsing | Object Oriented
-                Programming | Bootstrap
-              </p>
-            </div>
+      <div class="container">
+        <h4 class="fs-1 mt-4">Skills and Technologies</h4>
+      </div>
+
+      <div
+        class="container-fluid mb-5"
+        style="
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding-top: 30px;
+        "
+      >
+        <div class="container-languages">
+          <div class="languages">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            />
+            <h4>HTML</h4>
+          </div>
+          <div class="languages">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            />
+            <h4>CSS</h4>
+          </div>
+          <div class="languages">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            />
+            <h4>Bootstrap</h4>
+          </div>
+          <div class="languages">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            />
+            <h4>Javascript</h4>
+          </div>
+          <div class="languages">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            />
+            <h4>Python</h4>
+          </div>
+          <div class="languages">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+            />
+            <h4>Django</h4>
+          </div>
+          <div class="languages">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+            />
+            <h4>SQLite</h4>
+          </div>
+          <div class="languages">
+            <img
+              src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+            />
+            <h4>Postman</h4>
           </div>
         </div>
-        <div class="about-col">
-          <h3>Titles</h3>
-          <p>Full Stack Developer - ITBA 2022</p>
-        </div>
+      </div>
+
+      <div class="container-fluid pt-5">
+        <a href="imagenes/cv.pdf" download="CV - Tomas Allami">
+          <button class="resumeBtn">RESUME</button>
+        </a>
       </div>
     </section>
 
-    <!----- Work ----->
+    <!----- Projects ----->
 
     <div id="work" class="album py-5 bg-light p-2">
-      <h2 class="text-center">Work</h2>
+      <h2 class="text-center">Projects</h2>
       <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 m-3">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 m-3 justify-content-evenly"
+        >
           <div class="col">
-            <a
-              class="text-decoration-none"
-              href="https://github.com/Tallami/ITBANK"
-              target="_blank"
-              ><div class="card shadow-sm">
-                <div class="tarjeta card-body">
-                  <img
-                    src="imagenes/itbankpreview.jpeg"
-                    alt=""
-                    width="100%"
-                    height="auto"
-                  />
-                  <p class="card-text text-center h5">
-                    Project made mainly with Django and Rest Framework
+            <div class="card shadow-sm rounded-4">
+              <div class="tarjeta card-body rounded-4">
+                <img
+                  src="imagenes/itbankpreview.jpeg"
+                  alt=""
+                  width="100%"
+                  height="auto"
+                />
+                <div class="container container-p ml-4 rounded-bottom">
+                  <h4 class="text-white">ITBANK</h4>
+                  <p class="card-text text-white fs-6 p-0">
+                    Homebanking project made mainly with Django and Rest
+                    Framework
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  ></div>
+                  <a href="https://github.com/Tallami/ITBANK"
+                    ><button class="readBtn">Read More</button></a
+                  >
                 </div>
               </div>
-            </a>
+            </div>
           </div>
 
           <div class="col">
-            <a
-              class="text-decoration-none"
-              href="https://tallami.github.io/App-Gastos/"
-              target="_blank"
-              ><div class="card shadow-sm">
-                <div class="tarjeta card-body">
-                  <img
-                    src="imagenes/appgastospreview.jpeg"
-                    alt=""
-                    width="100%"
-                    height="auto"
-                  />
-                  <p class="card-text text-center h5">
+            <div class="card shadow-sm rounded-4">
+              <div class="tarjeta card-body rounded-4">
+                <img
+                  src="imagenes/appgastospreview.jpeg"
+                  alt=""
+                  width="100%"
+                  height="auto"
+                />
+                <div class="container container-p ml-4 rounded-bottom">
+                  <h4 class="text-white">Expenses App</h4>
+                  <p class="card-text text-white fs-6 p-0">
                     Basic App made with JavaScript to split expenses
                   </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  ></div>
+                  <a href="https://tallami.github.io/App-Gastos/"
+                    ><button class="readBtn">Read More</button></a
+                  >
                 </div>
               </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a
-              class="text-decoration-none"
-              href="https://github.com/Tallami/ITBANK"
-              target="_blank"
-              ><div class="card shadow-sm">
-                <div class="tarjeta card-body">
-                  <img
-                    src="imagenes/itbankpreview.jpeg"
-                    alt=""
-                    width="100%"
-                    height="auto"
-                  />
-                  <p class="card-text text-center h5">
-                    Project made mainly with Django and Rest Framework
-                  </p>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  ></div>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -166,9 +204,31 @@
         </div>
 
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="#">Linkedin logo</a></li>
-          <li class="ms-3"><a class="text-muted" href="#">Gmail logo</a></li>
-          <li class="ms-3"><a class="text-muted" href="#">Algo mas logo</a></li>
+          <li class="ms-3">
+            <a
+              class="text-muted"
+              href="https://www.linkedin.com/in/tomasallami/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-muted"
+              href="https://github.com/Tallami"
+              target="_blank"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+          </li>
+
+          <li class="ms-3">
+            <a
+              class="text-muted"
+              href="mailto:totoallami@gmail.com"
+              target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </li>
         </ul>
       </footer>
     </div>
