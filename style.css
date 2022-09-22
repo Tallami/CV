@@ -90,43 +90,11 @@ nav .fa {
   text-decoration: none;
 }
 
-@media (max-width: 700px) {
-  .text-box h1 {
-    font-size: 20px;
-  }
-  .nav-links ul li {
-    display: block;
-  }
-  .nav-links {
-    position: absolute;
-    background: #000;
-    height: 100vh;
-    width: 200px;
-    top: 0;
-    right: -200px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
-  }
-
-  nav .fa {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
-
-  .nav-links ul {
-    padding: 30px;
-  }
-}
-
 /*---- about ----*/
 
 .about {
   width: 80%;
-  height: 1000px;
+  height: 62.5rem;
   margin: auto;
   text-align: center;
   padding-top: 50px;
@@ -187,6 +155,7 @@ h3 {
   margin: 16px;
   padding: 8px 16px;
   width: 200px;
+  min-width: 200px;
   --shadow-color: 0deg 0% 45%;
   box-shadow: 1px 1px 1.6px hsl(var(--shadow-color) / 0.52),
     1.9px 1.9px 3px -1.2px hsl(var(--shadow-color) / 0.52),
@@ -254,13 +223,54 @@ h3 {
   color: #fff;
 }
 
-@media (max-width: 700px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
 .icono {
   width: 100%;
   height: 40px;
+}
+
+/* Media */
+
+@media (max-width: 700px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #000;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  #work {
+    margin-top: 400px;
+  }
 }
