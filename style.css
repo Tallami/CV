@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Gemunu Libre", sans-serif;
+  user-select: none;
 }
 
 .header {
@@ -186,6 +187,10 @@ h3 {
   margin: 16px;
   padding: 8px 16px;
   width: 200px;
+  --shadow-color: 0deg 0% 45%;
+  box-shadow: 1px 1px 1.6px hsl(var(--shadow-color) / 0.52),
+    1.9px 1.9px 3px -1.2px hsl(var(--shadow-color) / 0.52),
+    5px 5px 8px -2.5px hsl(var(--shadow-color) / 0.52);
 }
 
 .languages img {
@@ -195,13 +200,6 @@ h3 {
 
 .languages h4 {
   margin: 0px 0px 0px 16px;
-}
-
-.languages:hover {
-  --shadow-color: 0deg 0% 45%;
-  box-shadow: 1px 1px 1.6px hsl(var(--shadow-color) / 0.52),
-    1.9px 1.9px 3px -1.2px hsl(var(--shadow-color) / 0.52),
-    5px 5px 8px -2.5px hsl(var(--shadow-color) / 0.52);
 }
 
 /*---- work ----*/
