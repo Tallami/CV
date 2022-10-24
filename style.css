@@ -215,6 +215,7 @@ h3 {
   border: 1px solid #3d9df2;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+  margin-bottom: 50px;
 }
 
 .resumeBtn:hover {
