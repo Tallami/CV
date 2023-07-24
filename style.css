@@ -206,6 +206,11 @@ h3 {
   color: #fff;
 }
 
+#img {
+  max-height: 302px !important;
+  min-height: 302px !important;
+}
+
 /*---- contact ----*/
 
 .resumeBtn {
